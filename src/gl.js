@@ -49,7 +49,7 @@ export const setup = (el) => {
             ang*maxWidth,
             (length(d)-R)*maxHeight/height
         );
-        if (d.y < 0.0) pos.y = 0.0;
+        if (d.y < 0.0) pos.y = 0.0; // remove duplicate in -ve
         pos = pos/vec2(maxWidth, maxHeight);
         mediump vec4 col = vec4(0.2,0.2,0.2,1.0);
         bool xOut = abs(pos.x - 0.5) < 0.5;
