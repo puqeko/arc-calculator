@@ -36,7 +36,7 @@ export const setup = (el) => {
     {   
         // Normalized pixel coordinates (from 0 to 1)
         mediump vec2 uv = gl_FragCoord.xy/iResolution;
-        uv.y -= 0.5*(maxHeight-height)/maxHeight;  // transform to center instread of bottom
+        uv.y -= 0.333*(maxHeight-height)/maxHeight;  // transform to center instread of bottom
         
         // map from arc coords to img coords
         mediump float R = 0.5*height*w_b / (width - w_b);
