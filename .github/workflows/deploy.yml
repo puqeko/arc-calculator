@@ -13,9 +13,6 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-permissions:
-  packages: read
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -46,8 +43,14 @@ jobs:
         with:
           # Path of the directory containing the static assets.
           path: dist/
-          # token: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: Deploy GitHub Pages site
-        uses: actions/deploy-pages@v2.0.1
+      # - name: Deploy GitHub Pages site
+      #   uses: actions/deploy-pages@v2.0.1
 
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          single-commit: true
