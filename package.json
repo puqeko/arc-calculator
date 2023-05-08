@@ -1,0 +1,22 @@
+{
+  "name": "label-distort",
+  "version": "1.0.0",
+  "description": "Calculate arc parameters for putting labels on sloped cylinders",
+  "license": "MIT",
+  "scripts": {
+    "fmt": "eslint src --ext js --fix",
+    "build": "parcel build src/main.html --no-source-maps",
+    "start": "parcel src/main.html"
+  },
+  "dependencies": {
+    "tweakpane": "^3.1.9"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "parcel": "^2.8.3"
+  }
+}

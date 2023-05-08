@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;;;AAMA","sources":["src/main.css"],"sourcesContent":["body {\n  margin: 0;\n  padding: 0;\n  background-color: rgb(51, 51, 51);\n  color: #444;\n}\na {\n  color: #08f;\n}"],"names":[],"version":3,"file":"main.af20ad6e.css.map","sourceRoot":"/__parcel_source_root/"}
