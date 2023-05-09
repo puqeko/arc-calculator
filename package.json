@@ -12,6 +12,8 @@
     "tweakpane": "^3.1.9"
   },
   "devDependencies": {
+    "@parcel/transformer-glsl": "2.8.3",
+    "@parcel/transformer-inline-string": "2.8.3",
     "eslint": "^8.40.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.25.2",
