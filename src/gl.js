@@ -138,21 +138,23 @@ export const draw = (params) => {
 
   const u = uniforms
   const theta = params.slope/180.0*Math.PI
-  u.theta.value = theta
   const height = params.h
-  u.height.value = height
   const width = params.w
-  u.width.value = width
   const r = params.r
   const w_b = width*(r - 0.5*height*Math.tan(theta))/r
-  u.w_b.value = w_b
   const l = height*w_b/(width-w_b) * Math.sin((width-w_b)/height)
-  u.l.value = l
   const maxWidth = width + height
+  const phi = (width - w_b)/height
+  
+  u.theta.value = theta
+  u.height.value = height
+  u.width.value = width
+  u.w_b.value = w_b
+  u.l.value = l
   u.maxWidth.value = maxWidth
   u.maxHeight.value = maxWidth*cv.height/cv.width
-  const phi = (width - w_b)/height
   u.phi.value = phi
+  console.log(JSON.stringify(params))
 
   let abort = false
   let arc = 2.0 * (width - w_b)/(height * Math.PI) * 100

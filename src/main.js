@@ -15,8 +15,6 @@ const PARAMS = {
   scale: 0,
   arc: 0,
   angle: 0,
-  w_b: 0,
-  l: 0,
 }
 
 const redraw = () => {
