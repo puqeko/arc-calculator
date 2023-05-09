@@ -43,7 +43,9 @@ export const setup = (el) => {
     return
   }
 
-  for (const name of otherUniforms.concat(floatUniforms)) { uniformLocations[name] = gl.getUniformLocation(sp, name) }
+  for (const name of otherUniforms.concat(floatUniforms)) {
+    uniformLocations[name] = gl.getUniformLocation(sp, name)
+  }
 
   vertexPositions = gl.getAttribLocation(sp, 'aVertPos')
 
