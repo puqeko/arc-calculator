@@ -148,7 +148,7 @@ export const draw = (params) => {
   u.w_b.value = w_b
   const l = height*w_b/(width-w_b) * Math.sin((width-w_b)/height)
   u.l.value = l
-  const maxWidth = l + 2.0*height
+  const maxWidth = width + height
   u.maxWidth.value = maxWidth
   u.maxHeight.value = maxWidth*cv.height/cv.width
   const phi = (width - w_b)/height

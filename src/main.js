@@ -11,7 +11,7 @@ const PARAMS = {
   w: 130,
   h: 30,
   r: 50,
-  slope: 0,
+  slope: 5,
   scale: 0,
   arc: 0,
   angle: 0,
