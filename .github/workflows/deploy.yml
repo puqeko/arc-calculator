@@ -39,7 +39,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build to /dist
-        run: yarn build --public-url "/${{ github.event.repository.name }}",
+        run: yarn build --public-url "/${{ github.event.repository.name }}"
         
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v1.0.8
