@@ -104,7 +104,6 @@ setup(containerEl)
 redraw()
 
 window.addEventListener('resize', () => {
-  resize();
-  clear();
-  draw(values)
+  resize()
+  redraw()
 })
