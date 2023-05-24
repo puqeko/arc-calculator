@@ -84,7 +84,7 @@ pane.addInput(values, 'height', {
   min: 1e-8
 })
 pane.addInput(values, 'r', {
-  label: 'Mid Radius',
+  label: 'Radius',
   min: 1e-8
 })
 pane.addInput(values, 'slope', {
